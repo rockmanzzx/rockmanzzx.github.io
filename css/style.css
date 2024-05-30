@@ -1,0 +1,89 @@
+.copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+.ui-content {
+    text-align: center;
+}
+
+.pt-menu .ui-btn {
+    cursor: pointer;
+    display: inline-block;
+    height: 100px;
+    margin: 5px !important;
+    padding: 10px;
+    text-align: center;
+    width: 110px;
+    /*border-radius: 200px;*/
+}
+
+.pt-menu .ui-btn-inner {
+    border: 0;
+}
+
+.pt-menu .ui-btn img {
+    /*height: 50px;*/
+}
+
+
+/* 联系 */
+#contact .ui-br {
+    border: 0;
+}
+
+/* 解决表单底部下划线问题 */
+.ui-br {
+    border-bottom: none !important;
+}
+
+/* 表单错误 */
+label.error {
+    color: red;
+    padding-top: .5em;
+    vertical-align: top;
+    font-weight:bold;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 22%;
+}
+
+
+/* 表格样式 */
+.tablerow {
+    display: inline-block;
+    width: 100%;
+}
+.left-table {
+    text-align: right;
+    width: 25%; float: left;
+    padding-right: 2%;
+    font-weight: bold;
+}
+.right-table {
+    text-align: left;
+    width: 73%; float: left;
+}
+
+.previous-btn {
+    float: left;
+}
+.next-btn {
+    float: right;
+}
+
+.ui-collapsible-heading-toggle {
+    border: none;
+}
+
+.ui-textalign-left {
+    text-align: left;
+}
+
+.portfolio-item .ui-btn-icon-notext {
+    padding: 0 !important;
+}
+
+.home-text {
+    padding-bottom: 10px;
+}

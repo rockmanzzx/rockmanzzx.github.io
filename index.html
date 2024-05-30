@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mobile Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="mobile portfolio, mobile portfolio site" />
+    <meta name="author" content="sam deering" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.mobile-1.2.0.min.js"></script>
+    <link href="css/jquery.mobile.structure-1.2.0.min.css" rel="stylesheet" />
+    <link href="css/jquery.mobile.theme-1.2.0.min.css" rel="stylesheet" />
+    <link href="css/jquery.mobile-1.2.0.min.css" rel="stylesheet" />
+    <link href="css/photoswipe.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <script src="js/klass.min.js"></script>
+    <script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
+  </head>
+
+  <body>
+    <!-- 首页 -->
+    <div data-role="page" id="home">
+      <div data-role="header">
+        <h1>个人展示页</h1>
+      </div>
+      <div data-role="content">
+        <h2 class="home-title">嗨！我叫赵泽鑫!</h2>
+        <div class="home-text">一名全栈开发工程师</div>
+
+        <div class="pt-menu">
+          <a
+            data-theme="d"
+            data-corners="false"
+            data-role="button"
+            href="#profile"
+          >
+            <img
+              src="images/icons/round/64x64/profile.png"
+              alt="rss"
+              style="display: block; margin: 0 auto"
+            />
+            个人信息
+          </a>
+
+          <a
+            data-theme="d"
+            data-corners="false"
+            data-role="button"
+            href="#portfolio"
+          >
+            <img
+              src="images/icons/round/64x64/portfolio.png"
+              alt="rss"
+              style="display: block; margin: 0 auto"
+            />
+            项目经历
+          </a>
+
+          <a
+            data-theme="d"
+            data-corners="false"
+            data-role="button"
+            href="#social"
+          >
+            <img
+              src="images/icons/round/64x64/linkedin.png"
+              alt="mail"
+              style="display: block; margin: 0 auto"
+            />
+            社交主页
+          </a>
+
+          <a
+            data-theme="d"
+            data-corners="false"
+            data-role="button"
+            href="#contact"
+          >
+            <img
+              src="images/icons/round/64x64/mail.png"
+              alt="mail"
+              style="display: block; margin: 0 auto"
+            />
+            联系方式
+          </a>
+        </div>
+      </div>
+      <div data-role="footer">
+        <h2>个人展示页</h2>
+        <p class="copyright">&copy; rockmanzzx 2024 JQuery Mobile</p>
+      </div>
+    </div>
+
+    <!-- 个人信息 -->
+    <div data-role="page" id="profile" data-title="profile">
+      <div data-role="header">
+        <h1>个人信息</h1>
+        <a data-role="button" href="#home" data-icon="home" data-corners="false"
+          >首页</a
+        >
+      </div>
+      <div data-role="content">
+        <!-- 头像 -->
+        <img
+          src="https://img.bosszhipin.com/beijin/upload/avatar/20190708/6c34ea65df29171de10efee7251c2d7f10376e9ab9a99d9e65acdccf88a787e6_s.jpg"
+          alt="mee"
+        />
+
+        <!-- 个人信息 -->
+        <div data-role="collapsible-set">
+          <div
+            data-role="collapsible"
+            data-corners="false"
+            class="ui-corner-none"
+            data-collapsed="false"
+          >
+            <h2 class="ui-collapsible-heading">
+              <a
+                class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d"
+                href="#"
+                data-corners="false"
+                data-shadow="false"
+                data-iconshadow="true"
+                data-icon="plus"
+                data-iconpos="left"
+                data-theme="d"
+              >
+                <span class="ui-btn-text">个人信息</span>
+              </a>
+            </h2>
+            <div class="ui-body ui-body-d ui-textalign-left">
+              <div class="tablerow">
+                <div class="left-table">姓名:</div>
+                <div class="right-table">赵泽鑫</div>
+              </div>
+              <div class="tablerow">
+                <div class="left-table">年龄:</div>
+                <div class="right-table">33</div>
+              </div>
+              <div class="tablerow">
+                <div class="left-table">性别:</div>
+                <div class="right-table">男</div>
+              </div>
+              <div class="tablerow">
+                <div class="left-table">所在城市:</div>
+                <div class="right-table">呼和浩特</div>
+              </div>
+              <div class="tablerow">
+                <div class="left-table">职业:</div>
+                <div class="right-table">全栈开发工程师</div>
+              </div>
+              <div class="tablerow">
+                <div class="left-table">个人优势:</div>
+                <div class="right-table">
+                  热爱学习，责任心强。精通模块化开发，善于优化重构代码，注重用户体验
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 技术栈 -->
+          <div
+            data-role="collapsible"
+            data-corners="false"
+            class="ui-corner-none"
+          >
+            <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+              <a
+                class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d"
+                href="#"
+                data-corners="false"
+                data-shadow="false"
+                data-iconshadow="true"
+                data-icon="plus"
+                data-iconpos="left"
+                data-theme="d"
+              >
+                <span class="ui-btn-text">技术栈</span>
+              </a>
+            </h2>
+            <div class="ui-body ui-body-d ui-textalign-left">
+              <div data-role="collapsible-set">
+                <div
+                  data-role="collapsible"
+                  data-corners="false"
+                  class="ui-corner-none"
+                >
+                  <h2
+                    class="ui-collapsible-heading ui-collapsible-heading-collapsed"
+                  >
+                    <a
+                      class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d"
+                      href="#"
+                      data-corners="false"
+                      data-shadow="false"
+                      data-iconshadow="true"
+                      data-icon="plus"
+                      data-iconpos="left"
+                      data-theme="d"
+                    >
+                      <span class="ui-btn-text">移动端开发</span>
+                    </a>
+                  </h2>
+                  <div class="ui-body ui-textalign-left">
+                    原生（iOS，Android），混合（RN，Flutter，uni-app），小程序
+                  </div>
+                </div>
+
+                <div
+                  data-role="collapsible"
+                  data-corners="false"
+                  class="ui-corner-none"
+                >
+                  <h2
+                    class="ui-collapsible-heading ui-collapsible-heading-collapsed"
+                  >
+                    <a
+                      class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d"
+                      href="#"
+                      data-corners="false"
+                      data-shadow="false"
+                      data-iconshadow="true"
+                      data-icon="plus"
+                      data-iconpos="left"
+                      data-theme="d"
+                    >
+                      <span class="ui-btn-text">WEB前端开发</span>
+                    </a>
+                  </h2>
+                  <div class="ui-body ui-textalign-left">
+                    Vue，React，TS，JQuery
+                  </div>
+                </div>
+
+                <div
+                  data-role="collapsible"
+                  data-corners="false"
+                  class="ui-corner-none"
+                >
+                  <h2
+                    class="ui-collapsible-heading ui-collapsible-heading-collapsed"
+                  >
+                    <a
+                      class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d"
+                      href="#"
+                      data-corners="false"
+                      data-shadow="false"
+                      data-iconshadow="true"
+                      data-icon="plus"
+                      data-iconpos="left"
+                      data-theme="d"
+                    >
+                      <span class="ui-btn-text">服务端开发</span>
+                    </a>
+                  </h2>
+                  <div class="ui-body ui-textalign-left">
+                    Python 服务端、爬虫、脚本，nodeJS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 工作经历 -->
+          <div
+            data-role="collapsible"
+            data-corners="false"
+            class="ui-corner-none"
+          >
+            <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+              <a
+                class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d"
+                href="#"
+                data-corners="false"
+                data-shadow="false"
+                data-iconshadow="true"
+                data-icon="plus"
+                data-iconpos="left"
+                data-theme="d"
+              >
+                <span class="ui-btn-text">工作经历</span>
+              </a>
+            </h2>
+            <div
+              class="ui-body ui-body-d ui-textalign-left ui-corner-none"
+              data-corners="false"
+            >
+              <div
+                data-role="collapsible-set"
+                class="ui-corner-none"
+                data-corners="false"
+              >
+                <div
+                  data-role="collapsible"
+                  data-corners="false"
+                  class="ui-corner-none"
+                >
+                  <h2
+                    class="ui-collapsible-heading ui-collapsible-heading-collapsed"
+                  >
+                    <a
+                      class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d"
+                      href="#"
+                      data-corners="false"
+                      data-shadow="false"
+                      data-iconshadow="true"
+                      data-icon="plus"
+                      data-iconpos="left"
+                      data-theme="d"
+                    >
+                      <span class="ui-btn-text"
+                        >2020 - 2024: 北京昆仑亿发科技股份有限公司</span
+                      >
+                    </a>
+                  </h2>
+                  <div class="ui-body ui-textalign-left">
+                    作为技术团队的核心成员，我主导并参与多个国际性展会应用的移动和网页端的开发。我的主要任务是全面参与
+                    iOS、Android
+                    、小程序及前端网页的开发工作，并保证跨平台的兼容性和功能对等性。
+                  </div>
+                </div>
+
+                <div
+                  data-role="collapsible"
+                  data-corners="false"
+                  class="ui-corner-none"
+                >
+                  <h2
+                    class="ui-collapsible-heading ui-collapsible-heading-collapsed"
+                  >
+                    <a
+                      class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d"
+                      href="#"
+                      data-corners="false"
+                      data-shadow="false"
+                      data-iconshadow="true"
+                      data-icon="plus"
+                      data-iconpos="left"
+                      data-theme="d"
+                    >
+                      <span class="ui-btn-text"
+                        >2018 - 2020: 内蒙古北青信息技术有限公司</span
+                      >
+                    </a>
+                  </h2>
+                  <div class="ui-body ui-textalign-left">
+                    主要负责并参与移动端和小程序的相关产品文档的编写、原型设计、开发与调试，并参与网页端的开发与调试。
+                  </div>
+                </div>
+
+                <div
+                  data-role="collapsible"
+                  data-corners="false"
+                  class="ui-corner-none"
+                >
+                  <h2
+                    class="ui-collapsible-heading ui-collapsible-heading-collapsed"
+                  >
+                    <a
+                      class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-up-d"
+                      href="#"
+                      data-corners="false"
+                      data-shadow="false"
+                      data-iconshadow="true"
+                      data-icon="plus"
+                      data-iconpos="left"
+                      data-theme="d"
+                    >
+                      <span class="ui-btn-text"
+                        >2017 - 2018: 北京北纬天辰科技有限公司</span
+                      >
+                    </a>
+                  </h2>
+                  <div class="ui-body ui-textalign-left">
+                    负责聊天、语音视频、画板等相关功能的开发与调试。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-role="footer">
+        <h2>个人展示页</h2>
+        <p class="copyright">&copy; rockmanzzx 2024 JQuery Mobile</p>
+      </div>
+    </div>
+
+    <!-- 项目经历 -->
+    <div data-role="page" id="portfolio" data-title="portfolio">
+      <div data-role="header">
+        <h1>项目经历</h1>
+        <a
+          data-role="button"
+          href="#home"
+          data-transition="flip"
+          data-icon="home"
+          data-corners="false"
+          >首页</a
+        >
+      </div>
+      <div data-role="content">
+        <ul
+          data-inset="true"
+          data-role="listview"
+          class="ui-listview ui-listview-inset ui-corner-all ui-shadow ui-corner-none"
+        >
+          <!-- 项目1 -->
+          <li
+            data-corners="false"
+            data-shadow="false"
+            data-iconshadow="true"
+            data-wrapperels="div"
+            data-icon="false"
+            data-iconpos="right"
+            data-theme="c"
+            class="portfolio-item ui-btn ui-btn-icon-right ui-li ui-li-has-alt ui-li-has-thumb ui-first-child ui-btn-up-c ui-corner-none"
+          >
+            <div class="ui-btn-inner ui-li ui-li-has-alt">
+              <div class="ui-btn-text">
+                <a href="#portfolio1" class="ui-link-inherit ui-corner-none">
+                  <img
+                    src="images/portfolio/mianliao-icon.jpg"
+                    class="ui-li-thumb ui-corner-none"
+                  />
+                  <h3 class="ui-li-heading">intertextile面料展</h3>
+                  <p class="ui-li-desc">国际性大型面料布饰展会项目</p>
+                </a>
+              </div>
+            </div>
+            <a
+              href="#portfolio1"
+              title="Purchase album"
+              class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c"
+              data-corners="false"
+              data-shadow="false"
+              data-iconshadow="true"
+              data-wrapperels="span"
+              data-icon="false"
+              data-iconpos="notext"
+              data-theme="c"
+              ><span class="ui-btn-inner"
+                ><span class="ui-btn-text"></span
+                ><span
+                  data-corners="true"
+                  data-shadow="true"
+                  data-iconshadow="true"
+                  data-wrapperels="span"
+                  data-icon="arrow-r"
+                  data-iconpos="notext"
+                  data-theme="b"
+                  title=""
+                  class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"
+                  ><span class="ui-btn-inner"
+                    ><span class="ui-btn-text"></span
+                    ><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"
+                      >&nbsp;</span
+                    ></span
+                  ></span
+                ></span
+              ></a
+            >
+          </li>
+
+          <!-- 项目2 -->
+          <li
+            data-corners="false"
+            data-shadow="false"
+            data-iconshadow="true"
+            data-wrapperels="div"
+            data-icon="false"
+            data-iconpos="right"
+            data-theme="c"
+            class="portfolio-item ui-btn ui-btn-icon-right ui-li ui-li-has-alt ui-li-has-thumb ui-first-child ui-btn-up-c"
+          >
+            <div class="ui-btn-inner ui-li ui-li-has-alt">
+              <div class="ui-btn-text">
+                <a href="#portfolio2" class="ui-link-inherit">
+                  <img
+                    src="images/portfolio/baoli-icon.jpg"
+                    class="ui-li-thumb"
+                  />
+                  <h3 class="ui-li-heading">家居礼品展</h3>
+                  <p class="ui-li-desc">国际性大型家居礼品展会项目</p>
+                </a>
+              </div>
+            </div>
+            <a
+              href="#portfolio2"
+              title="Purchase album"
+              class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c"
+              data-corners="false"
+              data-shadow="false"
+              data-iconshadow="true"
+              data-wrapperels="span"
+              data-icon="false"
+              data-iconpos="notext"
+              data-theme="c"
+              ><span class="ui-btn-inner"
+                ><span class="ui-btn-text"></span
+                ><span
+                  data-corners="true"
+                  data-shadow="true"
+                  data-iconshadow="true"
+                  data-wrapperels="span"
+                  data-icon="arrow-r"
+                  data-iconpos="notext"
+                  data-theme="b"
+                  title=""
+                  class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"
+                  ><span class="ui-btn-inner"
+                    ><span class="ui-btn-text"></span
+                    ><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"
+                      >&nbsp;</span
+                    ></span
+                  ></span
+                ></span
+              >
+            </a>
+          </li>
+
+          <!-- 项目3 -->
+          <li
+            data-corners="false"
+            data-shadow="false"
+            data-iconshadow="true"
+            data-wrapperels="div"
+            data-icon="false"
+            data-iconpos="right"
+            data-theme="c"
+            class="portfolio-item ui-btn ui-btn-icon-right ui-li ui-li-has-alt ui-li-has-thumb ui-btn-up-c"
+          >
+            <div class="ui-btn-inner ui-li ui-li-has-alt">
+              <div class="ui-btn-text">
+                <a href="#portfolio3" class="ui-link-inherit">
+                  <img
+                    src="images/portfolio/dangjian-icon.jpg"
+                    class="ui-li-thumb"
+                  />
+                  <h3 class="ui-li-heading">智慧党建</h3>
+                  <p class="ui-li-desc">学党章党规，学系列讲话，做合格党员</p>
+                </a>
+              </div>
+            </div>
+            <a
+              href="#portfolio3"
+              title="Purchase album"
+              class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c"
+              data-corners="false"
+              data-shadow="false"
+              data-iconshadow="true"
+              data-wrapperels="span"
+              data-icon="false"
+              data-iconpos="notext"
+              data-theme="c"
+              ><span class="ui-btn-inner"
+                ><span class="ui-btn-text"></span
+                ><span
+                  data-corners="true"
+                  data-shadow="true"
+                  data-iconshadow="true"
+                  data-wrapperels="span"
+                  data-icon="arrow-r"
+                  data-iconpos="notext"
+                  data-theme="b"
+                  title=""
+                  class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"
+                  ><span class="ui-btn-inner"
+                    ><span class="ui-btn-text"></span
+                    ><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"
+                      >&nbsp;</span
+                    ></span
+                  ></span
+                ></span
+              ></a
+            >
+          </li>
+
+          <!-- 项目4 -->
+          <li
+            data-corners="false"
+            data-shadow="false"
+            data-iconshadow="true"
+            data-wrapperels="div"
+            data-icon="false"
+            data-iconpos="right"
+            data-theme="c"
+            class="portfolio-item ui-btn ui-btn-icon-right ui-li ui-li-has-alt ui-li-has-thumb ui-btn-up-c ui-corner-none"
+          >
+            <div class="ui-btn-inner ui-li ui-li-has-alt">
+              <div class="ui-btn-text">
+                <a href="#portfolio4" class="ui-link-inherit">
+                  <img
+                    src="images/portfolio/qixiangju-icon.png"
+                    class="ui-li-thumb ui-corner-none"
+                  />
+                  <h3 class="ui-li-heading">集聚区</h3>
+                  <p class="ui-li-desc">内蒙古气象局项目</p>
+                </a>
+              </div>
+            </div>
+            <a
+              href="#portfolio4"
+              title="Purchase album"
+              class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-d"
+              data-corners="false"
+              data-shadow="false"
+              data-iconshadow="true"
+              data-wrapperels="span"
+              data-icon="false"
+              data-iconpos="notext"
+              data-theme="c"
+              ><span class="ui-btn-inner"
+                ><span class="ui-btn-text"></span
+                ><span
+                  data-corners="true"
+                  data-shadow="true"
+                  data-iconshadow="true"
+                  data-wrapperels="span"
+                  data-icon="arrow-r"
+                  data-iconpos="notext"
+                  data-theme="d"
+                  title=""
+                  class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"
+                  ><span class="ui-btn-inner"
+                    ><span class="ui-btn-text"></span
+                    ><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"
+                      >&nbsp;</span
+                    ></span
+                  ></span
+                ></span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div data-role="footer">
+        <h2>个人展示页</h2>
+        <p class="copyright">&copy; rockmanzzx 2024 JQuery Mobile</p>
+      </div>
+    </div>
+
+    <!-- 项目详情1 -->
+    <div data-role="page" id="portfolio1" data-title="portfolio1">
+      <div data-role="header">
+        <h1>intertextile面料展</h1>
+        <a
+          data-role="button"
+          href="#portfolio"
+          data-transition="flip"
+          data-icon="arrow-l"
+          data-corners="false"
+          >返回</a
+        >
+      </div>
+      <div data-role="content">
+        <img
+          src="images/portfolio/mianliao-thumb.webp"
+          alt="portfolio item 1"
+        />
+
+        <p>
+          intertextile
+          面料展App是intertextile官方提供的一站式展会服务App，为观众提供智能化、数字化的展会体验。随时随地获知展会动态，提供参观登记、新闻头条、优选展商榜、推荐展品榜、展会地图、交通指南、电子会刊、活动日程等服务功能。强大的标签检索功能，搜索感兴趣的展商、展品，提高观展效率；便捷灵活的邀约日程管理和即时提醒，快速发布需求信息、对感兴趣的展商和产品互动，线上邀约，线下见面。
+          <a
+            href="https://apps.apple.com/cn/app/intertextile%E9%9D%A2%E6%96%99%E5%B1%95/id1449095087"
+            >AppStore</a
+          >
+        </p>
+      </div>
+      <div data-role="footer">
+        <h2>个人展示页</h2>
+        <p class="copyright">&copy; rockmanzzx 2024 JQuery Mobile</p>
+      </div>
+    </div>
+
+    <!-- 项目详情2 -->
+    <div data-role="page" id="portfolio2" data-title="portfolio2">
+      <div data-role="header">
+        <h1>家居礼品展</h1>
+        <a
+          data-role="button"
+          href="#portfolio"
+          data-transition="flip"
+          data-icon="arrow-l"
+          data-corners="false"
+          >返回</a
+        >
+      </div>
+      <div data-role="content">
+        <img src="images/portfolio/baoli-thumb.webp" alt="portfolio item 2" />
+
+        <p>
+          家居礼品展App是广州（锦汉）家居用品及礼品展览会的官方App。展商和观众都可以通过此App进行线上宣传展示、互动交流。
+          由广州市保利锦汉展览有限公司主办的广州（锦汉）家居用品及礼品展览会（简称锦汉家居礼品展），创办于2000年春季，每年春秋两季在广州举办，迄今已成功举办40届，是中国最大最专业的家居礼品出口贸易平台，也是国内唯一获得国际会展联盟（UFI）认证的家居礼品出口贸易型展会。
+          第40届锦汉家居礼品展面积已达到85,000平方米，参展商汇聚中国家居礼品行业信誉良好、实力雄厚的制造厂商达900家。锦汉家居礼品展的采购商来自于全球160多个国家和地区，每届数量超过5万人次，包括全球家居礼品及用品行业的进口商、批发商、连锁店、百货公司及超级市场等。经过十八年的积淀，目前锦汉家居礼品展已受到全球20万名国际专业买家的认可与信赖。
+          <a
+            href="https://apps.apple.com/cn/app/%E5%AE%B6%E5%B1%85%E7%A4%BC%E5%93%81%E5%B1%95/id1512538976"
+            >AppStore</a
+          >
+        </p>
+      </div>
+      <div data-role="footer">
+        <h2>个人展示页</h2>
+        <p class="copyright">&copy; rockmanzzx 2024 JQuery Mobile</p>
+      </div>
+    </div>
+
+    <!-- 项目详情3 -->
+    <div data-role="page" id="portfolio3" data-title="portfolio3">
+      <div data-role="header">
+        <h1>智慧党建</h1>
+        <a
+          data-role="button"
+          href="#portfolio"
+          data-transition="flip"
+          data-icon="arrow-l"
+          data-corners="false"
+          >返回</a
+        >
+      </div>
+      <div data-role="content">
+        <!-- 展示图片 -->
+        <ul id="gallery1" class="gallery">
+          <li>
+            <a href="images/portfolio/dangjian-thumb-1.png" rel="external"
+              ><img
+                src="images/portfolio/dangjian-thumb-1.png"
+                alt="portfolio Image 01"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/dangjian-thumb-2.png" rel="external"
+              ><img
+                src="images/portfolio/dangjian-thumb-2.png"
+                alt="portfolio Image 02"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/dangjian-thumb-3.png" rel="external"
+              ><img
+                src="images/portfolio/dangjian-thumb-3.png"
+                alt="portfolio Image 03"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/dangjian-thumb-4.png" rel="external"
+              ><img
+                src="images/portfolio/dangjian-thumb-4.png"
+                alt="portfolio Image 04"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/dangjian-thumb-5.png" rel="external"
+              ><img
+                src="images/portfolio/dangjian-thumb-5.png"
+                alt="portfolio Image 05"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/dangjian-thumb-6.png" rel="external"
+              ><img
+                src="images/portfolio/dangjian-thumb-6.png"
+                alt="portfolio Image 06"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/dangjian-thumb-7.png" rel="external"
+              ><img
+                src="images/portfolio/dangjian-thumb-7.png"
+                alt="portfolio Image 07"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/dangjian-thumb-8.png" rel="external"
+              ><img
+                src="images/portfolio/dangjian-thumb-8.png"
+                alt="portfolio Image 08"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/dangjian-thumb-9.png" rel="external"
+              ><img
+                src="images/portfolio/dangjian-thumb-9.png"
+                alt="portfolio Image 09"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div data-role="footer">
+        <h2>个人展示页</h2>
+        <p class="copyright">&copy; rockmanzzx 2024 JQuery Mobile</p>
+      </div>
+    </div>
+
+    <!-- 项目详情4 -->
+    <div data-role="page" id="portfolio4" data-title="portfolio4">
+      <div data-role="header">
+        <h1>集聚区</h1>
+        <a
+          data-role="button"
+          href="#portfolio"
+          data-transition="flip"
+          data-icon="arrow-l"
+          data-corners="false"
+          >返回</a
+        >
+      </div>
+      <div data-role="content">
+        <!-- 展示图片 -->
+        <ul id="gallery2" class="gallery">
+          <li>
+            <a href="images/portfolio/qixiangju-thumb-1.png" rel="external"
+              ><img
+                src="images/portfolio/qixiangju-thumb-1.png"
+                alt="portfolio Image 01"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/qixiangju-thumb-2.png" rel="external"
+              ><img
+                src="images/portfolio/qixiangju-thumb-2.png"
+                alt="portfolio Image 02"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/qixiangju-thumb-3.png" rel="external"
+              ><img
+                src="images/portfolio/qixiangju-thumb-3.png"
+                alt="portfolio Image 03"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/qixiangju-thumb-4.png" rel="external"
+              ><img
+                src="images/portfolio/qixiangju-thumb-4.png"
+                alt="portfolio Image 04"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/qixiangju-thumb-5.png" rel="external"
+              ><img
+                src="images/portfolio/qixiangju-thumb-5.png"
+                alt="portfolio Image 05"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/qixiangju-thumb-6.png" rel="external"
+              ><img
+                src="images/portfolio/qixiangju-thumb-6.png"
+                alt="portfolio Image 06"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/qixiangju-thumb-7.png" rel="external"
+              ><img
+                src="images/portfolio/qixiangju-thumb-7.png"
+                alt="portfolio Image 06"
+            /></a>
+          </li>
+          <li>
+            <a href="images/portfolio/qixiangju-thumb-8.png" rel="external"
+              ><img
+                src="images/portfolio/qixiangju-thumb-8.png"
+                alt="portfolio Image 06"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div data-role="footer">
+        <h2>个人展示页</h2>
+        <p class="copyright">&copy; rockmanzzx 2024 JQuery Mobile</p>
+      </div>
+    </div>
+
+    <!-- 社交 -->
+    <div data-role="page" id="social" data-title="Social">
+      <div data-role="header">
+        <h1>社交主页</h1>
+        <a
+          data-role="button"
+          href="#home"
+          data-transition="flip"
+          data-icon="home"
+          data-corners="false"
+          >首页</a
+        >
+      </div>
+      <div data-role="content">
+        <div id="social-links" class="pt-menu">
+          <a
+            data-theme="d"
+            data-corners="false"
+            data-role="button"
+            href="#twitter"
+          >
+            <img
+              src="images/icons/round/64x64/twitter.png"
+              alt="twitter"
+              style="display: block; margin: 0 auto"
+            />
+            Twitter
+          </a>
+
+          <a
+            data-theme="d"
+            data-corners="false"
+            data-role="button"
+            href="#facebook"
+          >
+            <img
+              src="images/icons/round/64x64/facebook.png"
+              alt="facebook"
+              style="display: block; margin: 0 auto"
+            />
+            Facebook
+          </a>
+
+          <a
+            data-theme="d"
+            data-corners="false"
+            data-role="button"
+            href="#youtube"
+          >
+            <img
+              src="images/icons/round/64x64/youtube.png"
+              alt="youtube"
+              style="display: block; margin: 0 auto"
+            />
+            YouTube
+          </a>
+
+          <a
+            data-theme="d"
+            data-corners="false"
+            data-role="button"
+            href="#linkedin"
+          >
+            <img
+              src="images/icons/round/64x64/linkedin.png"
+              alt="linkedin"
+              style="display: block; margin: 0 auto"
+            />
+            LinkedIn
+          </a>
+
+          <a
+            data-theme="d"
+            data-corners="false"
+            data-role="button"
+            href="#instagram"
+          >
+            <img
+              src="images/icons/round/64x64/instagram.png"
+              alt="instagram"
+              style="display: block; margin: 0 auto"
+            />
+            Instagram
+          </a>
+
+          <a
+            data-theme="d"
+            data-corners="false"
+            data-role="button"
+            href="#pinterest"
+          >
+            <img
+              src="images/icons/round/64x64/pinterest.png"
+              alt="pinterest"
+              style="display: block; margin: 0 auto"
+            />
+            Pinterest
+          </a>
+        </div>
+      </div>
+      <div data-role="footer">
+        <h2>个人展示页</h2>
+        <p class="copyright">&copy; rockmanzzx 2024 JQuery Mobile</p>
+      </div>
+    </div>
+
+    <!-- 联系方式 -->
+    <div data-role="page" id="contact" data-title="Contact">
+      <div data-role="header">
+        <h1>联系方式</h1>
+        <a data-role="button" href="#home" data-icon="home" data-corners="false"
+          >首页</a
+        >
+      </div>
+      <div data-role="content">
+        <form method="POST" action="#" id="contact" novalidate="novalidate">
+          <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+            <label for="name" class="ui-input-text"> 姓名*: </label>
+            <input
+              type="text"
+              class="required ui-input-text ui-body-d ui-corner-none ui-shadow-inset"
+              value=""
+              name="name"
+              id="name"
+              data-corners="false"
+            />
+          </div>
+          <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+            <label for="email" class="ui-input-text"> 邮箱*: </label>
+            <input
+              type="email"
+              class="required ui-input-text ui-body-d ui-corner-none ui-shadow-inset"
+              value=""
+              name="email"
+              id="email"
+              data-corners="false"
+            />
+          </div>
+          <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+            <label for="msg" class="ui-input-text"> 内容*: </label>
+            <textarea
+              class="required ui-input-text ui-body-d ui-corner-none ui-shadow-inset"
+              rows="8"
+              cols="160"
+              name="msg"
+              id="msg"
+              data-corners="false"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            data-theme="d"
+            name="submit"
+            value="submit"
+            class="ui-btn-hidden"
+            aria-disabled="false"
+            data-corners="false"
+          >
+            提交
+          </button>
+        </form>
+      </div>
+      <div data-role="footer">
+        <h2>个人展示页</h2>
+        <p class="copyright">&copy; rockmanzzx 2024 JQuery Mobile</p>
+      </div>
+    </div>
+  </body>
+</html>
